@@ -1,24 +1,17 @@
-# test = "I love Coding!"
-# reverse = test[len(test)::-1]
-# print(reverse)
 
-# string1 ="I love sushi!"
-
-# print(string1.split())
+number = int(input(" "))
 
 
-# string1 = "I Hate BellaTheWolf!"
-
-# print(len(string1))
-
-# string1 = "I love Panda Express!"
-
-# print(string1.find("a"))
-
-# string1 = "packgod roasts bella"
-# print(strin    
-word = input("input a phrase")
-
-first = word.find("e")
-last = word.rfind("e")
-print(str(first) + "-" + str(last))
+if 100 <= number <= 999:
+    
+    digit1 = number // 100         
+    digit2 = (number // 10) % 10   
+    digit3 = number % 10           
+    
+    
+    sum_of_digits = digit1 + digit2 + digit3
+    
+    
+    print(f"The sum of those digits is {sum_of_digits}.")
+else:
+    print("Please enter a valid three-digit number.")
