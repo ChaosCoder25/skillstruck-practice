@@ -1,7 +1,26 @@
-number_of_miles =  int(input("Enter the number of miles your car can drive in a day: "))
-total_miles = int(input("Enter the total number of miles to get to your destination: "))
+# number = input("Enter a number with three digits")
 
-days_needed = total_miles // miles_per_day
-if total_miles % miles_per_day != 0:
-    days_needed +  1
-print(miles_per_day.format,"It will take your car {days_needed} days to make that trip.")    
+# first = number[0]
+# second = number[1]
+# third = number[2]
+
+# total = int(first) + int(second) + int(third)
+
+# message = "The sum of those digits is {}"
+
+# print(message.format(total))
+
+
+
+
+# User input
+number = input("enter decimal")
+
+#### Mathy bits
+first = float(number) * 10
+second = int(first % 10)
+
+# Message, format(), print
+message = "The first decimal digit is {}"
+
+print(message.format(second))
