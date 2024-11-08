@@ -33,20 +33,34 @@
 # for x in measurement.values():
 # 	print(x)
  
-amanda_value = int(input("How many in Amanda's group?"))
-jane_value = int(input("How many in Jane's group?"))
+# first = int(input("Pick the height of box5"))		
+# group = {
+# 	"box1" : 5,
+# 	"box2" : 2,
+# 	"box3" : 10,
+# 	"box4" : 3,
+# 	"box5" : first
+# }
 
+# total_volume = 0 
+
+# for x in group.values():
+# 	volume =  25 * x
+# 	total_volume =   volume + total_volume
+
+# print(total_volume)
+first = int(input("Pick a first number"))
+second = int(input("Pick a second number"))			
 group = {
-	"Fred" : 12,
-	"Jackson" : 15,
-	"Sophie" : 20,
-	"Amanda" : amanda_value,
-	"Jane" : jane_value,
+	3 : 10,
+	5 : 3,
+	10 : 6,
+	4 : 30,
+	first : second
 }
 
-total =  0
+total = 0
+for x,y in group.items():
+	total =   total +(x*y)
 
-for t in group.values():
-	total += amanda_value , jane_value 
-	
-print(t)
+print(total)
